@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 public class CustomPopTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     private let customPopTransitionDuration: TimeInterval = 0.25

@@ -13,6 +13,7 @@ import Foundation
 import CoreGraphics
 
 /// Financial chart type that draws candle-sticks.
+@available(iOS 13.0, *)
 open class CandleStickChartView: BarLineChartViewBase, CandleChartDataProvider
 {
     internal override func initialize()

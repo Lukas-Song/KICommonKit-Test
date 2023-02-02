@@ -12,6 +12,7 @@
 import Foundation
 import CoreGraphics
 
+@available(iOS 13.0, *)
 open class BubbleChartView: BarLineChartViewBase, BubbleChartDataProvider
 {
     open override func initialize()

@@ -12,6 +12,9 @@ let package = Package(
             targets: ["KICommonKit"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift", from: "1.6.0"),
+        .package(url: "https://github.com/airbnb/lottie-ios", from: "4.1.2")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -20,7 +23,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "KICommonKit",
-            dependencies: []),
+            dependencies: [
+                .product(name: "Algorithms", package: "swift-algorithms"),
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+                .product(name: "Lottie", package: "lottie-ios")
+            ]),
         .testTarget(
             name: "KICommonKitTests",
             dependencies: ["KICommonKit"]),

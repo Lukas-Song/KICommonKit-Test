@@ -8,12 +8,13 @@
 import UIKit
 import Lottie
 
+@available(iOS 13.0, *)
 public final class LoadingView: UIView {
     
     static let indicatorWidth: CGFloat = 60.0
     static let defaultFrame: CGRect = CGRect(x: 0, y: 0, width: LoadingView.indicatorWidth, height: LoadingView.indicatorWidth)
     
-    private let animationView: AnimationView = .init(name: "loading", bundle: Bundle.Common)
+    private let animationView: LottieAnimationView = .init(name: "loading")
     private var loadingTask: DispatchWorkItem?
     public static let loadingView: LoadingView = LoadingView(frame: LoadingView.defaultFrame)
     

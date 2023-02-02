@@ -13,6 +13,7 @@ import Foundation
 import CoreGraphics
 
 /// BarChart with horizontal bar orientation. In this implementation, x- and y-axis are switched.
+@available(iOS 13.0, *)
 open class HorizontalBarChartView: BarChartView
 {
     internal override func initialize()

@@ -19,6 +19,7 @@ protocol AnimationTransitCheckable where Self: UIViewController {
     func presentCompleted()
 }
 
+@available(iOS 13.0, *)
 public class KINavigationController: UINavigationController, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
     private struct Const {

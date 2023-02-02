@@ -12,6 +12,7 @@
 import Foundation
 import CoreGraphics
 
+@available(iOS 13.0, *)
 open class CombinedChartRenderer: NSObject, DataRenderer
 {
     public let viewPortHandler: ViewPortHandler

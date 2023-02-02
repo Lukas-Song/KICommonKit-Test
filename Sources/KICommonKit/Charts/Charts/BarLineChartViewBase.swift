@@ -19,6 +19,7 @@ import AppKit
 #endif
 
 /// Base-class of LineChart, BarChart, ScatterChart and CandleStickChart.
+@available(iOS 13.0, *)
 open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartDataProvider, NSUIGestureRecognizerDelegate
 {
     // ADDED!!

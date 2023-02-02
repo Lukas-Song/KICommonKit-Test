@@ -16,7 +16,7 @@ import CoreGraphics
     import UIKit
 #endif
 
-
+@available(iOS 13.0, *)
 open class HorizontalBarChartRenderer: BarChartRenderer
 {
     private class Buffer

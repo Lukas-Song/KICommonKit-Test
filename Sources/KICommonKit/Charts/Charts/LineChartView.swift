@@ -13,6 +13,7 @@ import Foundation
 import CoreGraphics
 
 /// Chart that draws lines, surfaces, circles, ...
+@available(iOS 13.0, *)
 open class LineChartView: BarLineChartViewBase, LineChartDataProvider
 {
     internal override func initialize()

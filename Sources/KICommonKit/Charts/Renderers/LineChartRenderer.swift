@@ -12,6 +12,7 @@
 import Foundation
 import CoreGraphics
 
+@available(iOS 13.0, *)
 open class LineChartRenderer: LineRadarRenderer
 {
     // TODO: Currently, this nesting isn't necessary for LineCharts. However, it will make it much easier to add a custom rotor

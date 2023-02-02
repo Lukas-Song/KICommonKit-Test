@@ -9,6 +9,7 @@ import UIKit
 import PhotosUI
 import AVFoundation
 
+@available(iOS 14, *)
 public final class PermissionManager: NSObject {
 
     public static func photoPermission() async -> PHAuthorizationStatus {
